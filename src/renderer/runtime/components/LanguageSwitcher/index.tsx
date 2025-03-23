@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function LanguageSwitcher() {
   const { i18n } = useTranslation();
 
-  const changeLanguage = async (lang: "en-US" | "ru-RU") => {
+  const changeLanguage = async (lang: "en-US" | "ru-RU" | "ua-UA") => {
     await i18n.changeLanguage(lang);
     setOpen(!open)
   };
@@ -34,6 +34,10 @@ export default function LanguageSwitcher() {
             <li className={classes.menuElement}
               onClick={() => changeLanguage("en-US")}>
               EN
+            </li>
+            <li className={classes.menuElement}
+              onClick={() => changeLanguage("ua-UA")}>
+              UA
             </li>
           </ul>
         </nav>
