@@ -1,6 +1,6 @@
 {
     "name": "CumUnizmCraftLauncher",
-    "version": "0.1.5",
+    "version": "0.2.0",
     "description": "Launcher for Minecraft",
     "main": "out/main/index-obf.loader.js",
     "private": true,
